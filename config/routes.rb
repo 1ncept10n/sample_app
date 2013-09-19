@@ -5,6 +5,8 @@ SampleApp::Application.routes.draw do
 
   get "pages/about"
 
+  get "pages/help"
+
   #require 'autotest/growl'
   # The priority is based upon order of creation:
   # first created -> highest priority.
