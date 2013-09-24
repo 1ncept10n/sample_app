@@ -22,9 +22,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'rb-readline', '~> 0.5.0', require: 'readline'
+
 group :development do
   gem 'rspec-rails', '2.6.1'
   gem 'sqlite3'
+  gem 'annotate'
 end
 
 group :test do
