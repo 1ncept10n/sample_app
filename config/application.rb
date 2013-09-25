@@ -1,5 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
+require 'rails/all'
+
+Bundler.require(:default, Rails.env) if defined?(Bundler)
+
 # Pick the frameworks you want:
 require "active_record/railtie"
 require "action_controller/railtie"
