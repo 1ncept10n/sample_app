@@ -147,3 +147,10 @@ div.field, div.action {
   font-size: 12px;
   list-style: square;
 }
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
