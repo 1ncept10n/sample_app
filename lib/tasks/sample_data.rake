@@ -14,7 +14,7 @@ def make_users
                  :password => "foobar",
                  :password_confirmation => "foobar")
     admin.toggle!(:admin)
-    99.times do |n|
+    5.times do |n|
       name  = Faker::Name.name
       email = "example-#{n+1}@railstutorial.org"
       password  = "password"
@@ -27,7 +27,7 @@ end
 
 def make_microposts
   User.all(:limit => 6).each do |user|
-    50.times do
+    5.times do
         content = Faker::Lorem.sentence(5)
         user.microposts.create!(:content => content)
     end
