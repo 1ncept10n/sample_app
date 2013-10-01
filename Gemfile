@@ -3,29 +3,20 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 
 gem 'gravatar_image_tag', '1.0.0.pre2'
-
 gem 'will_paginate', "~> 3.0.2"
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'activesupport', '3.2.13'
+gem 'jquery-rails'
+gem 'rb-readline', '~> 0.5.0', require: 'readline'
 
 group :production do
-	gem 'pg'
+	 gem 'pg', '0.12.2'
 end
 
-# Gems used only for assets and not required
-# in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'rb-readline', '~> 0.5.0', require: 'readline'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
@@ -42,7 +33,7 @@ group :test do
   gem 'factory_girl_rails', '1.0'
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
