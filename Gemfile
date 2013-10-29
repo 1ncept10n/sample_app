@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'rb-readline', '~> 0.5.0', require: 'readline'
 
 group :production do
-	 gem 'pg', '0.12.2'
+	 gem 'pg'
 end
 
 group :assets do
